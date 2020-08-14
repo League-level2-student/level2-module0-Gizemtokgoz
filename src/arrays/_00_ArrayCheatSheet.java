@@ -15,7 +15,7 @@ public class _00_ArrayCheatSheet {
 		// 5. use a for loop to print all the values in the array
 		// BE SURE TO USE THE ARRAY'S length VARIABLE
 		for (int i = 0; i < array.length; i++) {
-			System.out.println(array.length);
+			System.out.println(array[i]);
 		}
 		// 6. make an array of 50 integers
 		Integer[] intarray = new Integer[50];
@@ -33,8 +33,16 @@ public class _00_ArrayCheatSheet {
 					minimum = intarray[i];
 				}
 			}
+			System.out.println(minimum);
 		// 9 print the entire array to see if step 8 was correct
 		System.out.println(intarray.length);
 		// 10. print the largest number in the array.
+		int maximum = intarray[0];
+		for (int i = 0; i < intarray.length; i++) {
+			if (maximum < intarray[i]) {
+				maximum = intarray[i];
+			}
+		}
+		System.out.println(maximum);
 	}
 }
